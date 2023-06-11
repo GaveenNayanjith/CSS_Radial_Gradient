@@ -1,0 +1,55 @@
+#simple{
+    height: 100px;
+    width: 100px;
+    background-image: radial-gradient(20% 40%, #05af5a 80%, #b4b4b4 81%);
+    /*For the simple gradient 
+        1. The proportion in the div are the centre of circle needs to be specified 
+        ( values for both verticle and horizontal postions should be specified.)
+
+        2. If needed the postion of centre of the circle can also specified.
+
+        3. The colours with their percentages on the radial space
+    */
+}
+
+#noncentered{
+    height: 100px;
+    width: 100px;
+    background-image: radial-gradient(at center top, #05af5a 20%, #b4b4b4 65%);
+    /*For the noncentered gradient 
+        1. To create the non centered gradient the starting position of the gradient should be any position other than "center"
+
+        2. The proportion of the starting points of the cirlce will be omitted.
+    */
+}
+
+#circular{
+    height: 100px;
+    width: 100px;
+    background-image: radial-gradient(circle at center, #05af5a 25%, #b4b4b4 81%);
+    /*For the circular gradient 
+        1. The "circle" keyword can be used to specify the gradient in circular shape. 
+    */
+}
+
+         
+#btn-grad {
+    background-image: linear-gradient(to right, #05af5a 0%, #5bbeec  51%, #b4b4b4  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  #btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
